@@ -1,0 +1,14 @@
+<html>
+<body>
+	<button onClick="changeColor()">Click Me</button>
+	<script>
+		var place=0;
+		function changeColor(){
+			var colorList = ["red","green","blue","black","pink","orange"];
+			document.body.style.backgroundColor = colorList[place];
+			place++;
+			if(place==colorList.length)place=0;
+			}
+		</script>
+</body>
+</html>
