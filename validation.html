@@ -1,0 +1,32 @@
+<html>
+<body>
+<script type="text/javascript">
+function validateform()
+{ 
+  var name=document.form1.name.value;
+  var password=document.form1.password.value;
+  var email=document.form.email.value;
+if(name=="")
+{
+	alert("Enter a valid name");
+}
+else if(password.length<8||password="")
+{
+	alert("Enter a valid password");
+}
+}
+</script>
+<body>
+<div style="border:5px solid black; background-color:brown; box-sizing:content-box;margin-left:400px;width:400px;height:400px;padding-left:50px">
+<body bgcolor="silver" align="center">
+<font color="green">
+<h2 align="center">VALIDATION FORM</h2>
+</font>
+<form name="form1" onsubmit="return validateform()">
+Name<input type="text" name="name" required><br><br>
+Email<input type="text" name="email" <br><br>
+Password<input type="password" name="password" required><br><br>
+<input type="submit",value="">
+</form>
+</body>
+</html>
